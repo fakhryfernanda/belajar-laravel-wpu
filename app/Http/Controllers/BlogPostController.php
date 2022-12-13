@@ -9,9 +9,9 @@ class BlogPostController extends Controller
 {
     public function index() {
         return view('blog', [
-            "title" => "Blog",
+            "title" => "All Posts",
             // "posts" => BlogPost::all()
-            "posts" => BlogPost::latest()->get() // menampilkan data dari yang terbaru
+            "posts" => BlogPost::with(['author', 'category'])->latest()->get() // menampilkan data dari yang terbaru
         ]);
     }
 

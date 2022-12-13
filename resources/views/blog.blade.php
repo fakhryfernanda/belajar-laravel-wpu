@@ -4,7 +4,7 @@
 <section id="blog">
     <div class="container w-4/5 mx-auto">
         <div class="mb-10">
-            <h1 class="text-4xl font-bold mb-2">Blog Page</h1>
+            <h1 class="text-4xl font-bold mb-2">{{ $title }}</h1>
             <h4><a href="/categories" class="underline text-sky-400">See categories</a></h4>
         </div>
         <div>

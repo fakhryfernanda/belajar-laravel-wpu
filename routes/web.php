@@ -28,15 +28,14 @@ Route::get('/categories', function(){
 Route::get('/author/{author:username}', function(User $author){
     return view('blog', [
         'title' => $author->name . " Posts",
-        'posts' => $author->posts,
+        'posts' => $author->posts->load(['author', 'category']),
     ]);
 });
 
 Route::get('/category/{category:slug}', function(Category $category){
-    return view('category', [
-        'title' => $category->name,
-        'posts' => $category->posts,
-        'category' => $category->name
+    return view('blog', [
+        'title' => $category->name . " Category Posts",
+        'posts' => $category->posts->load(['author', 'category']),
     ]);
 });
 
