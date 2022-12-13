@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use App\Models\BlogPost;
 use App\Models\Category;
 use Illuminate\Support\Facades\Route;
@@ -23,6 +24,14 @@ Route::get('/categories', function(){
         'categories' => Category::all()
     ]);
 });
+
+Route::get('/author/{author:username}', function(User $author){
+    return view('blog', [
+        'title' => $author->name . " Posts",
+        'posts' => $author->posts,
+    ]);
+});
+
 Route::get('/category/{category:slug}', function(Category $category){
     return view('category', [
         'title' => $category->name,

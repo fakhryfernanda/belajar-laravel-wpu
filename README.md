@@ -38,3 +38,9 @@ BlogPost::where('category_id', 1)->get();
 ```
 php artisan db:seed
 ```
+
+// Buat factory
+`php artisan make:factory NamaFactory`
+
+// Membuat model sekaligus dengan model, factory, dan seeder
+`php artisan make:model Student -mfs`

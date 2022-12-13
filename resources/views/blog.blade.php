@@ -14,7 +14,7 @@
                     <h2 class="text-2xl font-bold">{{ $post->title }}</h2>
                 </a>
                 <h4 class="text-lg mb-2">
-                    By <a href="#" class="text-orange-400">{{ $post->user->name }}</a> on <a href="/category/{{ $post->category->slug }}" class="underline text-blue-400">{{ $post->category->name }}</a>
+                    By <a href="/author/{{ $post->author->username }}" class="text-orange-400">{{ $post->author->name }}</a> on <a href="/category/{{ $post->category->slug }}" class="underline text-blue-400">{{ $post->category->name }}</a>
                 </h4>
                 {{-- <h5>Written by: {{ $post["author"] }}</h5> --}}
                 <p class="pb-2">{{ $post->excerpt }}</p>

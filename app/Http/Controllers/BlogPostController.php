@@ -10,7 +10,8 @@ class BlogPostController extends Controller
     public function index() {
         return view('blog', [
             "title" => "Blog",
-            "posts" => BlogPost::all()
+            // "posts" => BlogPost::all()
+            "posts" => BlogPost::latest()->get() // menampilkan data dari yang terbaru
         ]);
     }
 
