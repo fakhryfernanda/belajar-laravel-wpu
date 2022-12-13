@@ -15,7 +15,7 @@ Route::get('/', function () {
 
 // [NamaController::class, 'nama method']
 Route::get('/blog', [BlogPostController::class, 'index']);
-Route::get('/blog/{post}', [BlogPostController::class, 'show']);
+Route::get('/blog/{post:slug}', [BlogPostController::class, 'show']);
 
 
 Route::get('/categories', function(){

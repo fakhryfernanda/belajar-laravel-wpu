@@ -12,6 +12,7 @@ class BlogPost extends Model
 
     // protected $fillable = ['title', 'excerpt', 'body'];
     protected $guarded = ['id']; // kebalikan dari fillable
+    protected $with = ['author', 'category'];
 
     // menghubungkan tabel post dengan tabel kategori
     public function category() {

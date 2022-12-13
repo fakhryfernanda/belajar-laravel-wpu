@@ -11,7 +11,7 @@ class BlogPostController extends Controller
         return view('blog', [
             "title" => "All Posts",
             // "posts" => BlogPost::all()
-            "posts" => BlogPost::with(['author', 'category'])->latest()->get() // menampilkan data dari yang terbaru
+            "posts" => BlogPost::latest()->get() // menampilkan data dari yang terbaru
         ]);
     }
 
