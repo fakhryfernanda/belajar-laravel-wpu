@@ -32,6 +32,7 @@
     <ul class="mx-auto w-fit flex gap-10">
         <li class="text-md font-semibold"><a href="/">Home</a></li>
         <li class="text-md font-semibold"><a href="/blog">Blog</a></li>
+        <li class="text-md font-semibold"><a href="/categories">Categories</a></li>
         <li class="text-md font-semibold"><a href="/about">About</a></li>
     </ul>
 </section>
