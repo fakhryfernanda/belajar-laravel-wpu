@@ -44,3 +44,6 @@ php artisan db:seed
 
 // Membuat model sekaligus dengan model, factory, dan seeder
 `php artisan make:model Student -mfs`
+
+// Validation Rule
+[Validation Rule Documentation](https://laravel.com/docs/9.x/validation#available-validation-rules)
