@@ -3,6 +3,7 @@
 use App\Models\User;
 use App\Models\BlogPost;
 use App\Models\Category;
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogPostController;
 
@@ -45,6 +46,8 @@ Route::get('/about', function () {
     ]);
 });
 // Route::get('/about', [BlogPostController::class, 'show']);
+
+Route::get('/login', [LoginController::class, 'index']);
 
 
 

@@ -34,5 +34,6 @@
         <li class="text-md font-semibold"><a href="/blog">Blog</a></li>
         <li class="text-md font-semibold"><a href="/categories">Categories</a></li>
         <li class="text-md font-semibold"><a href="/about">About</a></li>
+        <li class="text-md font-semibold"><a href="/login">Login</a></li>
     </ul>
 </section>
